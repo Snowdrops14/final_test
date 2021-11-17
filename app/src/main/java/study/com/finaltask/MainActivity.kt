@@ -1,7 +1,9 @@
 package study.com.finaltask
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -35,6 +37,13 @@ class MainActivity : AppCompatActivity() {
 
         bottomNavigationMenu.selectedItemId =
             savedInstanceState?.getInt(LAST_SELECTED_ITEM) ?: R.id.number
+
+
+        val thankButton: Button = findViewById(R.id.thank_button)
+        val intent = Intent(this, thank::class.java)
+        thankButton.setOnClickListener {
+            startActivity(intent)
+        }
 
     }
 

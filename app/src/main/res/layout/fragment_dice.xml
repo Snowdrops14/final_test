@@ -17,12 +17,18 @@
         android:layout_height="150dp"/>
 
     <Button
+        android:id="@+id/randomize_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_color"
+        android:fontFamily="casual"
+        android:text="@string/random"
+        android:textAlignment="viewStart"
+        android:textColor="@color/button_text_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dice_image_view"
-        android:id="@+id/randomize_button"
-        android:text="@string/random"/>
+        app:layout_constraintTop_toBottomOf="@+id/dice_image_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,21 +14,23 @@
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation_menu"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        app:itemTextColor="@color/text_bottom_navigation_color"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:id="@+id/bottom_navigation_menu"
-        app:menu="@menu/bottom_menu"/>
+        app:menu="@menu/bottom_menu" />
 
     <Button
         android:id="@+id/thank_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/thank_button_color"
-        android:fontFamily="casual"
+        android:backgroundTint="@color/main_color"
+        android:fontFamily="sans-serif"
         android:text="@string/thank"
         android:textColor="@color/text_thank_button_color"
-        android:textSize="12sp"
+        android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

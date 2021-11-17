@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalTask">
         <activity
-            android:name=".thank"
+            android:name=".ThankActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

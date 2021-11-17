@@ -27,13 +27,13 @@ class DiceFragment : Fragment() {
         diceImageView = view.findViewById(R.id.dice_image_view)
         randomizeButton = view.findViewById(R.id.randomize_button)
 
-        if (savedInstanceState != null)
-            rollDice(savedInstanceState.getInt(LAST_RANDOM_VALUE))
+        savedInstanceState?.let { randomValue = it.getInt(LAST_RANDOM_VALUE) }
+        rollDice(randomValue)
 
-            randomizeButton.setOnClickListener {
-                randomValue = Random.nextInt(1, 6)
-                rollDice(randomValue)
-            }
+        randomizeButton.setOnClickListener {
+            randomValue = Random.nextInt(1, 6)
+            rollDice(randomValue)
+        }
 
 
         return view

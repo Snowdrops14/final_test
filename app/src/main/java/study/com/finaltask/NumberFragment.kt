@@ -27,10 +27,8 @@ class NumberFragment : Fragment() {
         resultTextView = view.findViewById(R.id.result_text_view)
         randomizeButton = view.findViewById(R.id.randomize_button)
 
-        if (savedInstanceState != null)
-            resultTextView.text = savedInstanceState.getInt(LAST_RANDOMIZED_VALUE).toString()
-        else
-            randomize()
+        randomValue = savedInstanceState?.getInt(LAST_RANDOMIZED_VALUE) ?: 0
+        resultTextView.text = randomValue.toString()
 
         randomizeButton.setOnClickListener { randomize() }
         return view

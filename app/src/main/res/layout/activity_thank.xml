@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".thank">
+    tools:context=".ThankActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/thank_recycler_view"
